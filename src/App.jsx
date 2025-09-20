@@ -7,10 +7,10 @@ import Test from "./components/Test";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/luis-londono">
       <Routes>
-        <Route path="luis-londono" element={<Home />} />
-        <Route path="luis-londono/test" element={<Test />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </Router>
   );
